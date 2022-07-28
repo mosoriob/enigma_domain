@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/resource.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.1="http://localhost:8080/wings-portal/export/users/admin/Enigma/data/ontology.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.2="http://localhost:8080/wings-portal/export/users/admin/Enigma/components/library.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.3="http://www.wings-workflows.org/ontology/component.owl#"
+      xml:base="http://localhost:8080/wings-portal/export/users/admin/Enigma/components/abstract.owl">
+      <owl:Class rdf:about="library.owl#ShinyVisualizationClass">
+            <rdfs:subClassOf>
+                  <owl:Class rdf:about="library.owl#VisualizationClass"/>
+            </rdfs:subClassOf>
+      </owl:Class>
+      <owl:Class rdf:about="library.owl#VisualizationClass">
+            <rdfs:subClassOf>
+                  <owl:Class rdf:about="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+            </rdfs:subClassOf>
+      </owl:Class>
+      <owl:Class rdf:about="library.owl#MergeAndFilterFilesClass">
+            <rdfs:subClassOf>
+                  <owl:Class rdf:about="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+            </rdfs:subClassOf>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/component.owl#Component">
+            <rdfs:subClassOf rdf:parseType="Resource">
+            </rdfs:subClassOf>
+            <rdfs:subClassOf rdf:parseType="Resource">
+            </rdfs:subClassOf>
+            <rdfs:subClassOf rdf:parseType="Resource">
+            </rdfs:subClassOf>
+            <rdfs:subClassOf rdf:parseType="Resource">
+            </rdfs:subClassOf>
+      </owl:Class>
+      <owl:Class rdf:about="library.owl#AnalysisClass">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+      </owl:Class>
+      <j.2:MergeAndFilterFilesClass rdf:about="library.owl#MergeAndFilterFiles">
+            <j.3:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >3</j.3:hasVersion>
+            <j.3:isConcrete rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</j.3:isConcrete>
+            <j.3:hasOutput>
+                  <j.3:DataArgument rdf:about="library.owl#MergeAndFilterFiles_mergedFile">
+                        <j.3:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.3:hasDimensionality>
+                        <j.3:hasArgumentName>-o1</j.3:hasArgumentName>
+                        <j.3:hasArgumentID>mergedFile</j.3:hasArgumentID>
+                        <rdf:type rdf:resource="../data/ontology.owl#CSVFile"/>
+                  </j.3:DataArgument>
+            </j.3:hasOutput>
+            <j.3:hasInput>
+                  <j.3:ParameterArgument rdf:about="library.owl#MergeAndFilterFiles_snp">
+                        <j.3:hasValue></j.3:hasValue>
+                        <j.3:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.3:hasDimensionality>
+                        <j.3:hasArgumentName>-p3</j.3:hasArgumentName>
+                        <j.3:hasArgumentID>snp</j.3:hasArgumentID>
+                  </j.3:ParameterArgument>
+            </j.3:hasInput>
+            <j.3:hasInput>
+                  <j.3:ParameterArgument rdf:about="library.owl#MergeAndFilterFiles_area">
+                        <j.3:hasValue></j.3:hasValue>
+                        <j.3:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.3:hasDimensionality>
+                        <j.3:hasArgumentName>-p2</j.3:hasArgumentName>
+                        <j.3:hasArgumentID>area</j.3:hasArgumentID>
+                  </j.3:ParameterArgument>
+            </j.3:hasInput>
+            <j.3:hasInput>
+                  <j.3:ParameterArgument rdf:about="library.owl#MergeAndFilterFiles_trait">
+                        <j.3:hasValue></j.3:hasValue>
+                        <j.3:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.3:hasDimensionality>
+                        <j.3:hasArgumentName>-p1</j.3:hasArgumentName>
+                        <j.3:hasArgumentID>trait</j.3:hasArgumentID>
+                  </j.3:ParameterArgument>
+            </j.3:hasInput>
+            <j.3:hasInput>
+                  <j.3:DataArgument rdf:about="library.owl#MergeAndFilterFiles_inputCollection">
+                        <j.3:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >1</j.3:hasDimensionality>
+                        <j.3:hasArgumentName>-i1</j.3:hasArgumentName>
+                        <j.3:hasArgumentID>inputCollection</j.3:hasArgumentID>
+                        <rdf:type rdf:resource="../data/ontology.owl#CSVFile"/>
+                  </j.3:DataArgument>
+            </j.3:hasInput>
+      </j.2:MergeAndFilterFilesClass>
+      <j.2:AnalysisClass rdf:about="library.owl#Analysis">
+            <j.3:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</j.3:hasVersion>
+            <j.3:isConcrete rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</j.3:isConcrete>
+            <j.3:hasOutput>
+                  <j.3:DataArgument rdf:about="library.owl#Analysis_p_value">
+                        <j.3:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.3:hasDimensionality>
+                        <j.3:hasArgumentName>-o1</j.3:hasArgumentName>
+                        <j.3:hasArgumentID>p_value</j.3:hasArgumentID>
+                        <rdf:type rdf:resource="../data/ontology.owl#OutputFile"/>
+                  </j.3:DataArgument>
+            </j.3:hasOutput>
+            <j.3:hasInput>
+                  <j.3:DataArgument rdf:about="library.owl#Analysis_input">
+                        <j.3:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.3:hasDimensionality>
+                        <j.3:hasArgumentName>-i1</j.3:hasArgumentName>
+                        <j.3:hasArgumentID>input</j.3:hasArgumentID>
+                        <rdf:type rdf:resource="../data/ontology.owl#CSVFile"/>
+                  </j.3:DataArgument>
+            </j.3:hasInput>
+      </j.2:AnalysisClass>
+      <j.2:VisualizationClass rdf:about="library.owl#Visualization">
+            <j.3:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >0</j.3:hasVersion>
+            <j.0:hasHardwareDependency>
+                  <j.0:HardwareDependency>
+                        <j.0:needs64bit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+                        >false</j.0:needs64bit>
+                        <j.0:requiresStorageGB rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >0.0</j.0:requiresStorageGB>
+                        <j.0:requiresMemoryGB rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+                        >0.0</j.0:requiresMemoryGB>
+                  </j.0:HardwareDependency>
+            </j.0:hasHardwareDependency>
+            <j.3:isConcrete rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</j.3:isConcrete>
+      </j.2:VisualizationClass>
+      <j.2:ShinyVisualizationClass rdf:about="library.owl#ShinyVisualization">
+            <j.3:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</j.3:hasVersion>
+            <j.3:isConcrete rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >false</j.3:isConcrete>
+            <j.3:hasOutput>
+                  <j.3:DataArgument rdf:about="library.owl#ShinyVisualization_shiny_visualization">
+                        <j.3:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.3:hasDimensionality>
+                        <j.3:hasArgumentName>-o1</j.3:hasArgumentName>
+                        <j.3:hasArgumentID>shiny_visualization</j.3:hasArgumentID>
+                        <rdf:type rdf:resource="../data/ontology.owl#OutputFile"/>
+                  </j.3:DataArgument>
+            </j.3:hasOutput>
+            <j.3:hasInput>
+                  <j.3:DataArgument rdf:about="library.owl#ShinyVisualization_input">
+                        <j.3:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.3:hasDimensionality>
+                        <j.3:hasArgumentName>-i1</j.3:hasArgumentName>
+                        <j.3:hasArgumentID>input</j.3:hasArgumentID>
+                        <rdf:type rdf:resource="../data/ontology.owl#CSVFile"/>
+                  </j.3:DataArgument>
+            </j.3:hasInput>
+      </j.2:ShinyVisualizationClass>
+</rdf:RDF>

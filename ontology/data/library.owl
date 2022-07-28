@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/data.owl#"
+    xmlns:j.1="http://localhost:8080/wings-portal/export/users/admin/Enigma/data/ontology.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+      xml:base="http://localhost:8080/wings-portal/export/users/admin/Enigma/data/library.owl">
+      <j.1:CSVFile rdf:ID="SHA4925c5_GIG_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4925c5_GIG_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4ca5c5_CARDIFF_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4ca5c5_CARDIFF_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4a75c5_DNS-V3_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4a75c5_DNS-V3_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4775c5_MPIP_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4775c5_MPIP_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA47a5c5_ASRB_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA47a5c5_ASRB_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:about="#SHA&quot;4b1-5_FOR2107_Significant_GWAS.csv"/>
+      <j.1:CSVFile rdf:ID="SHA4c15c5_TCD-NUIG_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4c15c5_TCD-NUIG_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4ba5c5_SydneyMAS_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4ba5c5_SydneyMAS_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4b15c5_HUBIN_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4b15c5_HUBIN_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4835c5_MCIC_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4835c5_MCIC_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA48a5c5_LIBD_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA48a5c5_LIBD_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4925c5_HUNT_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4925c5_HUNT_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4aa5c5_BETULA_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4aa5c5_BETULA_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4a15c5_UNICAMP_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4a15c5_UNICAMP_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4a85c5_ADNI2GO_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4a85c5_ADNI2GO_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4935c5_GSP_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4935c5_GSP_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4f55c5_NeuroIMAGE_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4f55c5_NeuroIMAGE_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4b15c5_FOR2107_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4b15c5_FOR2107_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4a85c5_SYS_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4a85c5_SYS_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:about="#SHA&quot;487-5_QTIM_Significant_GWAS.csv"/>
+      <j.1:CSVFile rdf:ID="SHA4bf5c5_ImpACT_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4bf5c5_ImpACT_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4285c5_MIRECC_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4285c5_MIRECC_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4865c5_NCNG_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4865c5_NCNG_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4b85c5_IMAGEN_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4b85c5_IMAGEN_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4865c5_PDNZ_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4865c5_PDNZ_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4bb5c5_SHIP_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4bb5c5_SHIP_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4545c5_GOBS_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4545c5_GOBS_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4a65c5_PAFIP_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4a65c5_PAFIP_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:about="#SHA&quot;4c4-5_BONN_Significant_GWAS.csv"/>
+      <j.1:CSVFile rdf:ID="SHA4ee5c5_SHIP-Trend_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4ee5c5_SHIP-Trend_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4935c5_FBIRN_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4935c5_FBIRN_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4875c5_QTIM_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4875c5_QTIM_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:about="#SHA&quot;492-5_HUNT_Significant_GWAS.csv"/>
+      <j.1:CSVFile rdf:ID="SHA4905c5_MooDS_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4905c5_MooDS_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA46d5c5_NTR_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA46d5c5_NTR_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4945c5_MUNSTER_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4945c5_MUNSTER_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4fe5c4_1000BRAINS_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4fe5c4_1000BRAINS_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4945c5_BIG_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4945c5_BIG_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4835c5_NESDA_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4835c5_NESDA_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4815c5_ADNI1_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4815c5_ADNI1_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4c65c5_EPIGEN_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4c65c5_EPIGEN_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA3325da_ABCD_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA3325da_ABCD_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA46c5c5_OSAKA_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA46c5c5_OSAKA_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4765c5_OATS_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4765c5_OATS_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4945c5_TOP3T_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4945c5_TOP3T_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4c95c5_UKBB_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4c95c5_UKBB_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4835c5_Meth-CT_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4835c5_Meth-CT_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4aa5c5_UiO2017_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4aa5c5_UiO2017_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:about="#SHA&quot;4c6-5_EPIGEN_Significant_GWAS.csv"/>
+      <j.1:CSVFile rdf:ID="SHA4c45c5_BONN_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4c45c5_BONN_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4b45c5_LBC1936_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4b45c5_LBC1936_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA3f15c5_PPMI_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA3f15c5_PPMI_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:about="#SHA&quot;476-5_OATS_Significant_GWAS.csv"/>
+      <j.1:CSVFile rdf:ID="SHA4bf5c6_ALSPACa_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4bf5c6_ALSPACa_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4b15c5_DNS-V4_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4b15c5_DNS-V4_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA5305c4_BIG-PsychChip_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA5305c4_BIG-PsychChip_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4335c5_UMCU_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4335c5_UMCU_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4ad5c5_BrainScale_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4ad5c5_BrainScale_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA40a5c5_IMH_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA40a5c5_IMH_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA47a5c5_PING_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA47a5c5_PING_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4ae5c5_UiO2016_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4ae5c5_UiO2016_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4865c5_TOP_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4865c5_TOP_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+      <j.1:CSVFile rdf:ID="SHA4825c5_MPRC_Significant_GWAS.csv">
+            <j.0:hasLocation>/usr/local/tomcat/temp/domain-8857495009718357073-temp/Enigma/data/SHA4825c5_MPRC_Significant_GWAS.csv</j.0:hasLocation>
+      </j.1:CSVFile>
+</rdf:RDF>

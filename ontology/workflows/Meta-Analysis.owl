@@ -1,0 +1,661 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/workflow.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+      xml:base="http://localhost:8080/wings-portal/export/users/admin/Enigma/workflows/Meta-Analysis.owl">
+      <owl:Ontology rdf:about="">
+            <owl:imports>
+                  <owl:Ontology rdf:about="http://www.wings-workflows.org/ontology/workflow.owl"/>
+            </owl:imports>
+      </owl:Ontology>
+      <owl:Ontology rdf:about="http://www.wings-workflows.org/ontology/workflow.owl">
+            <owl:versionInfo>3.0</owl:versionInfo>
+      </owl:Ontology>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate">
+            <rdfs:subClassOf>
+                  <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+            </rdfs:subClassOf>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ComponentSetRule">
+            <rdfs:subClassOf>
+                  <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+            </rdfs:subClassOf>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#IncreaseDimensionality">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#NWise">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#WorkflowInstance">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#PortSetRule">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#XProduct">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#DataVariable">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#InputLink">
+            <rdfs:subClassOf>
+                  <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+            </rdfs:subClassOf>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#InOutLink">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#OutputLink">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ReduceDimensionality">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+      </owl:Class>
+      <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Shift">
+            <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+      </owl:Class>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasLink">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#derivedFrom"/>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasExpressionArgument">
+            <rdfs:range>
+                  <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+                        </owl:unionOf>
+                  </owl:Class>
+            </rdfs:range>
+            <rdfs:range>
+                  <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+                        </owl:unionOf>
+                  </owl:Class>
+            </rdfs:range>
+            <rdfs:range>
+                  <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+                        </owl:unionOf>
+                  </owl:Class>
+            </rdfs:range>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasOutputRole">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasComponentBinding">
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#canRunOn">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/resource.owl#Machine"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasOriginNode">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasInputPort">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasNode">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasWorkflow">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationPort">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding">
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#DataVariable"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationNode">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#mapsToVariable">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#createSetsOn">
+            <rdfs:range>
+                  <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable"/>
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+                        </owl:unionOf>
+                  </owl:Class>
+            </rdfs:range>
+            <rdfs:range>
+                  <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable"/>
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+                        </owl:unionOf>
+                  </owl:Class>
+            </rdfs:range>
+            <rdfs:range>
+                  <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable"/>
+                              <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+                        </owl:unionOf>
+                  </owl:Class>
+            </rdfs:range>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasVariable">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasOutputPort">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasComponent">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasComponentSetCreationRule">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasOriginPort">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasPortSetCreationRule">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasInputRole">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasMetadata">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+      </owl:ObjectProperty>
+      <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#satisfiesRole">
+            <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+      </owl:ObjectProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasVersion">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasDocumentation">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#isInactive">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasRoleID">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#createdFrom">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasContributor">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#tellmeData">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#createWorkflowSets">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasParameterValue">
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#isSkipped"/>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#autoFill">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#breakPoint">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#true"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#isConcrete">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasRules">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#createComponentSets">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasDimensionality">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+      </owl:DatatypeProperty>
+      <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#lastUpdateTime">
+            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+      </owl:DatatypeProperty>
+      <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+      <j.0:WorkflowTemplate rdf:ID="Meta-Analysis">
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="area_irole">
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                        <j.0:hasRoleID>MergeAndFilter_node_area</j.0:hasRoleID>
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="area">
+                                    <rdfs:comment>center:x=44.650000000000006,y=30.000964164733887</rdfs:comment>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="snp_irole">
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                        <j.0:hasRoleID>MergeAndFilter_node_snp</j.0:hasRoleID>
+                        <j.0:mapsToVariable>
+                              <j.0:ParameterVariable rdf:ID="snp">
+                                    <rdfs:comment>center:x=258.04648571014405,y=30.000964164733887</rdfs:comment>
+                              </j.0:ParameterVariable>
+                        </j.0:mapsToVariable>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="MergeAndFilter_node_snp_input">
+                        <j.0:hasVariable rdf:resource="#snp"/>
+                        <j.0:hasDestinationPort>
+                              <j.0:Port rdf:ID="MergeAndFilter_node_snp">
+                                    <j.0:satisfiesRole>
+                                          <rdf:Description rdf:ID="MergeAndFilter_node_snp_role">
+                                                <j.0:hasRoleID
+                                                >snp</j.0:hasRoleID>
+                                                <j.0:hasDimensionality
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#integer"
+                                                >0</j.0:hasDimensionality>
+                                          </rdf:Description>
+                                    </j.0:satisfiesRole>
+                              </j.0:Port>
+                        </j.0:hasDestinationPort>
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="MergeAndFilter_node">
+                                    <j.0:hasInputPort>
+                                          <j.0:Port rdf:ID="MergeAndFilter_node_inputCollection">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="MergeAndFilter_node_inputCollection_role">
+                                                            <j.0:hasRoleID
+                                                            >inputCollection</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >1</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasInputPort>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="MergeAndFilter_node_crule">
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                                <j.0:createSetsOn>
+                                                      <j.0:ComponentVariable rdf:ID="MergeAndFilter_node_comp">
+                                                            <j.0:isConcrete
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#boolean"
+                                                            >true</j.0:isConcrete>
+                                                            <j.0:hasComponentBinding rdf:resource="../components/library.owl#MergeAndFilter"/>
+                                                      </j.0:ComponentVariable>
+                                                </j.0:createSetsOn>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasComponent rdf:resource="#MergeAndFilter_node_comp"/>
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="MergeAndFilter_node_prule">
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-c63464c3-ffc5-4049-ad9e-755aed2bd7f6">
+                                                            <j.0:hasExpressionArgument rdf:resource="#MergeAndFilter_node_inputCollection"/>
+                                                            <j.0:hasExpressionArgument>
+                                                            
+      <j.0:Port rdf:ID="MergeAndFilter_node_trait">
+            <j.0:satisfiesRole>
+                  <rdf:Description rdf:ID="MergeAndFilter_node_trait_role">
+                        <j.0:hasRoleID>trait</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </rdf:Description>
+            </j.0:satisfiesRole>
+      </j.0:Port>                                           </j.0:hasExpressionArgument>
+                                                            <j.0:hasExpressionArgument>
+                                                            
+      <j.0:Port rdf:ID="MergeAndFilter_node_area">
+            <j.0:satisfiesRole>
+                  <rdf:Description rdf:ID="MergeAndFilter_node_area_role">
+                        <j.0:hasRoleID>area</j.0:hasRoleID>
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                  </rdf:Description>
+            </j.0:satisfiesRole>
+      </j.0:Port>                                           </j.0:hasExpressionArgument>
+                                                            <j.0:hasExpressionArgument rdf:resource="#MergeAndFilter_node_snp"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                                    <j.0:hasInputPort rdf:resource="#MergeAndFilter_node_trait"/>
+                                    <j.0:hasInputPort rdf:resource="#MergeAndFilter_node_area"/>
+                                    <rdfs:comment>center:x=204.15088329315188,y=103.33534526824951</rdfs:comment>
+                                    <j.0:hasInputPort rdf:resource="#MergeAndFilter_node_snp"/>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="MergeAndFilter_node_mergedFile">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="MergeAndFilter_node_mergedFile_role">
+                                                            <j.0:hasRoleID
+                                                            >mergedFile</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="MergeAndFilter_node_trait_input">
+                        <j.0:hasVariable>
+                              <j.0:ParameterVariable rdf:ID="trait">
+                                    <rdfs:comment>center:x=335.0526309967041,y=30.000964164733887</rdfs:comment>
+                              </j.0:ParameterVariable>
+                        </j.0:hasVariable>
+                        <j.0:hasDestinationPort rdf:resource="#MergeAndFilter_node_trait"/>
+                        <j.0:hasDestinationNode rdf:resource="#MergeAndFilter_node"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasOutputRole>
+                  <j.0:Role rdf:ID="p_value_orole">
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                        <j.0:hasRoleID>p_value</j.0:hasRoleID>
+                        <j.0:mapsToVariable>
+                              <j.0:DataVariable rdf:ID="p_value">
+                                    <rdfs:comment>center:x=120.54735956192017,y=323.33471488952637</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:mapsToVariable>
+                  </j.0:Role>
+            </j.0:hasOutputRole>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="MergeAndFilter_node_area_input">
+                        <j.0:hasVariable rdf:resource="#area"/>
+                        <j.0:hasDestinationPort rdf:resource="#MergeAndFilter_node_area"/>
+                        <j.0:hasDestinationNode rdf:resource="#MergeAndFilter_node"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasNode rdf:resource="#MergeAndFilter_node"/>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="MergeAndFilter_node_mergedFile_to_ForestPlot_node_input">
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="mergedFile">
+                                    <rdfs:comment>center:x=203.05,y=176.66974925994873</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                        <j.0:hasOriginPort rdf:resource="#MergeAndFilter_node_mergedFile"/>
+                        <j.0:hasOriginNode rdf:resource="#MergeAndFilter_node"/>
+                        <j.0:hasDestinationPort>
+                              <j.0:Port rdf:ID="ForestPlot_node_input">
+                                    <j.0:satisfiesRole>
+                                          <rdf:Description rdf:ID="ForestPlot_node_input_role">
+                                                <j.0:hasRoleID
+                                                >input</j.0:hasRoleID>
+                                                <j.0:hasDimensionality
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#integer"
+                                                >0</j.0:hasDimensionality>
+                                          </rdf:Description>
+                                    </j.0:satisfiesRole>
+                              </j.0:Port>
+                        </j.0:hasDestinationPort>
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="ForestPlot_node">
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="ForestPlot_node_prule">
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-669b9026-207a-4aba-82af-bbd631ef7f79">
+                                                            <j.0:hasExpressionArgument rdf:resource="#ForestPlot_node_input"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="ForestPlot_node_shiny_visualization">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="ForestPlot_node_shiny_visualization_role">
+                                                            <j.0:hasRoleID
+                                                            >shiny_visualization</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasInputPort rdf:resource="#ForestPlot_node_input"/>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="ForestPlot_node_crule">
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                                <j.0:createSetsOn>
+                                                      <j.0:ComponentVariable rdf:ID="ForestPlot_node_comp">
+                                                            <j.0:isConcrete
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#boolean"
+                                                            >true</j.0:isConcrete>
+                                                            <j.0:hasComponentBinding rdf:resource="../components/library.owl#ForestPlot"/>
+                                                      </j.0:ComponentVariable>
+                                                </j.0:createSetsOn>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasComponent rdf:resource="#ForestPlot_node_comp"/>
+                                    <rdfs:comment>center:x=287.7464857101441,y=249.99935245513916</rdfs:comment>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasNode rdf:resource="#ForestPlot_node"/>
+            <j.0:hasLink>
+                  <j.0:InputLink rdf:ID="MergeAndFilter_node_inputCollection_input">
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="inputCollection">
+                                    <rdfs:comment>center:x=151.34824285507204,y=30.000964164733887</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                        <j.0:hasDestinationPort rdf:resource="#MergeAndFilter_node_inputCollection"/>
+                        <j.0:hasDestinationNode rdf:resource="#MergeAndFilter_node"/>
+                  </j.0:InputLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:InOutLink rdf:ID="MergeAndFilter_node_mergedFile_to_MetaAnalysis_node_input">
+                        <j.0:hasVariable rdf:resource="#mergedFile"/>
+                        <j.0:hasOriginPort rdf:resource="#MergeAndFilter_node_mergedFile"/>
+                        <j.0:hasOriginNode rdf:resource="#MergeAndFilter_node"/>
+                        <j.0:hasDestinationPort>
+                              <j.0:Port rdf:ID="MetaAnalysis_node_input">
+                                    <j.0:satisfiesRole>
+                                          <rdf:Description rdf:ID="MetaAnalysis_node_input_role">
+                                                <j.0:hasRoleID
+                                                >input</j.0:hasRoleID>
+                                                <j.0:hasDimensionality
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#integer"
+                                                >0</j.0:hasDimensionality>
+                                          </rdf:Description>
+                                    </j.0:satisfiesRole>
+                              </j.0:Port>
+                        </j.0:hasDestinationPort>
+                        <j.0:hasDestinationNode>
+                              <j.0:Node rdf:ID="MetaAnalysis_node">
+                                    <j.0:hasPortSetCreationRule>
+                                          <j.0:PortSetRule rdf:ID="MetaAnalysis_node_prule">
+                                                <j.0:createComponentSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createComponentSets>
+                                                <j.0:createSetsOn>
+                                                      <j.0:XProduct rdf:ID="_xprod-86fbb2f1-092a-49d9-9fab-16a5579ba912">
+                                                            <j.0:hasExpressionArgument rdf:resource="#MetaAnalysis_node_input"/>
+                                                      </j.0:XProduct>
+                                                </j.0:createSetsOn>
+                                          </j.0:PortSetRule>
+                                    </j.0:hasPortSetCreationRule>
+                                    <j.0:hasOutputPort>
+                                          <j.0:Port rdf:ID="MetaAnalysis_node_p_value">
+                                                <j.0:satisfiesRole>
+                                                      <rdf:Description rdf:ID="MetaAnalysis_node_p_value_role">
+                                                            <j.0:hasRoleID
+                                                            >p_value</j.0:hasRoleID>
+                                                            <j.0:hasDimensionality
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#integer"
+                                                            >0</j.0:hasDimensionality>
+                                                      </rdf:Description>
+                                                </j.0:satisfiesRole>
+                                          </j.0:Port>
+                                    </j.0:hasOutputPort>
+                                    <j.0:hasInputPort rdf:resource="#MetaAnalysis_node_input"/>
+                                    <j.0:hasComponentSetCreationRule>
+                                          <j.0:ComponentSetRule rdf:ID="MetaAnalysis_node_crule">
+                                                <j.0:createWorkflowSets
+                                                 rdf:datatype=
+                                                "http://www.w3.org/2001/XMLSchema#boolean"
+                                                >true</j.0:createWorkflowSets>
+                                                <j.0:createSetsOn>
+                                                      <j.0:ComponentVariable rdf:ID="MetaAnalysis_node_comp">
+                                                            <j.0:isConcrete
+                                                             rdf:datatype=
+                                                            "http://www.w3.org/2001/XMLSchema#boolean"
+                                                            >true</j.0:isConcrete>
+                                                            <j.0:hasComponentBinding rdf:resource="../components/library.owl#MetaAnalysis"/>
+                                                      </j.0:ComponentVariable>
+                                                </j.0:createSetsOn>
+                                          </j.0:ComponentSetRule>
+                                    </j.0:hasComponentSetCreationRule>
+                                    <j.0:hasComponent rdf:resource="#MetaAnalysis_node_comp"/>
+                                    <rdfs:comment>center:x=119.44647626876832,y=249.99935245513916</rdfs:comment>
+                              </j.0:Node>
+                        </j.0:hasDestinationNode>
+                  </j.0:InOutLink>
+            </j.0:hasLink>
+            <j.0:hasLink>
+                  <j.0:OutputLink rdf:ID="ForestPlot_node_shiny_visualization_output">
+                        <j.0:hasVariable>
+                              <j.0:DataVariable rdf:ID="shiny_visualization">
+                                    <rdfs:comment>center:x=288.8473690032959,y=323.33471488952637</rdfs:comment>
+                              </j.0:DataVariable>
+                        </j.0:hasVariable>
+                        <j.0:hasOriginPort rdf:resource="#ForestPlot_node_shiny_visualization"/>
+                        <j.0:hasOriginNode rdf:resource="#ForestPlot_node"/>
+                  </j.0:OutputLink>
+            </j.0:hasLink>
+            <j.0:hasOutputRole>
+                  <j.0:Role rdf:ID="shiny_visualization_orole">
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                        <j.0:hasRoleID>shiny_visualization</j.0:hasRoleID>
+                        <j.0:mapsToVariable rdf:resource="#shiny_visualization"/>
+                  </j.0:Role>
+            </j.0:hasOutputRole>
+            <j.0:hasMetadata>
+                  <j.0:Metadata rdf:ID="Meta-Analysis_meta">
+                        <j.0:lastUpdateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2022-06-08T00:00:00Z</j.0:lastUpdateTime>
+                        <j.0:hasContributor>admin</j.0:hasContributor>
+                  </j.0:Metadata>
+            </j.0:hasMetadata>
+            <j.0:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >3</j.0:hasVersion>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="trait_irole">
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >0</j.0:hasDimensionality>
+                        <j.0:hasRoleID>MergeAndFilter_node_trait</j.0:hasRoleID>
+                        <j.0:mapsToVariable rdf:resource="#trait"/>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+            <j.0:hasNode rdf:resource="#MetaAnalysis_node"/>
+            <j.0:hasLink>
+                  <j.0:OutputLink rdf:ID="MetaAnalysis_node_p_value_output">
+                        <j.0:hasVariable rdf:resource="#p_value"/>
+                        <j.0:hasOriginPort rdf:resource="#MetaAnalysis_node_p_value"/>
+                        <j.0:hasOriginNode rdf:resource="#MetaAnalysis_node"/>
+                  </j.0:OutputLink>
+            </j.0:hasLink>
+            <j.0:hasInputRole>
+                  <j.0:Role rdf:ID="inputCollection_irole">
+                        <j.0:hasDimensionality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                        >1</j.0:hasDimensionality>
+                        <j.0:hasRoleID>MergeAndFilter_node_inputCollection</j.0:hasRoleID>
+                        <j.0:mapsToVariable rdf:resource="#inputCollection"/>
+                  </j.0:Role>
+            </j.0:hasInputRole>
+      </j.0:WorkflowTemplate>
+</rdf:RDF>

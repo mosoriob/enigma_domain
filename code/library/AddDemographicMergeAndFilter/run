@@ -1,0 +1,37 @@
+#!/bin/bash
+
+set -e
+checkExitCode() {
+if [ $? -ne 0 ]; then
+    echo "Error"
+    exit 1;
+fi
+}
+
+BASEDIR=`dirname $0`
+
+. $BASEDIR/io.sh 1 7 1 "$@"
+
+set -x
+
+
+TEMP=$(mktemp -d -p /opt/wings/storage/default/users/admin/Enigma/)
+
+mkdir -p $TEMP
+for file in ${INPUTS1[@]}
+do
+	cp $file $TEMP
+done
+
+echo "Number of files ${#INPUTS1[*]}"
+
+docker build -t dharmala/meta-reg2:v1 ${BASEDIR}
+        
+docker run \
+    --rm \
+    -v wings_neurodisk_wings_data:/opt/wings \
+    dharmala/meta-reg2:v1 \
+    python ${BASEDIR}/AddDemographicMergeAndFilter.py \
+		${TEMP} $PARAMS1 $PARAMS2 $PARAMS3 "$PARAMS4" $PARAMS5 $PARAMS6 $PARAMS7 $OUTPUTS1
+        
+checkExitCode

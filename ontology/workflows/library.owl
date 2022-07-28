@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.wings-workflows.org/ontology/workflow.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+      xml:base="http://localhost:8080/wings-portal/export/users/admin/Enigma/workflows/library.owl">
+      <j.0:WorkflowTemplate rdf:about="Meta-Regression.owl#Meta-Regression"/>
+      <j.0:WorkflowTemplate rdf:about="Meta-Analysis.owl#Meta-Analysis"/>
+</rdf:RDF>

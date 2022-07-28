@@ -1,0 +1,38 @@
+#!/bin/bash
+
+set -e
+checkExitCode() {
+if [ $? -ne 0 ]; then
+    echo "Error"
+    exit 1;
+fi
+}
+
+BASEDIR=`dirname $0`
+
+. $BASEDIR/io.sh 1 3 1 "$@"
+
+#Move all inputs and script to a directory
+TEMP=$(mktemp -d)
+mkdir $TEMP/inputFiles
+for file in ${INPUTS1[@]}
+do
+    echo "Input: $i $file"
+	cp $file $TEMP/inputFiles/
+    i=`expr $i + 1`
+done
+
+cp $BASEDIR/merge-and-filter.py $TEMP/merge-and-filter.py
+INPUTDIR="/out/inputFiles"
+#INPUTDIR=$TEMP/inputFiles
+
+#Fixme: do not run this docker image.
+docker run -v $TEMP:/out --rm dharmala/meta-reg2:v1 python /out/MergeAndFilter.py \
+		${INPUTDIR} $PARAMS1 $PARAMS2 $PARAMS3 /out/mergedcsv.csv
+cp $TEMP/mergedcsv.csv $OUTPUTS1
+
+#set -x
+#python $BASEDIR/merge-and-filter.py ${INPUTDIR} $PARAMS1 $PARAMS2 $PARAMS3 $OUTPUTS1
+
+rm -fr $TEMP
+checkExitCode

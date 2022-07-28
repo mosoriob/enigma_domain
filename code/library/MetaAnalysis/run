@@ -1,0 +1,41 @@
+#!/bin/bash
+
+set -e
+checkExitCode() {
+if [ $? -ne 0 ]; then
+    echo "Error"
+    exit 1;
+fi
+}
+
+BASEDIR=`dirname $0`
+
+. $BASEDIR/io.sh 1 0 1 "$@"
+
+#make temporary directory
+TEMP=$(mktemp -d)
+#TEMP=`pwd`/`uuidgen`
+#mkdir $TEMP#
+
+#copy input into local directory
+cp $INPUTS1 $TEMP/merge.csv
+cp $BASEDIR/metaAnalysis.R $TEMP/metaAnalysis.R
+
+echo "Input: $INPUTS1"
+echo "Outputs: $OUTPUTS1"
+ls $BASEDIR -a
+echo $BASEDIR
+
+#commented because already exists
+docker build shiny-extras $BASEDIR
+
+# docker run hello-world
+docker run -v $TEMP:/out --rm -p 8787:8787 yiboma/meta-r:v1 Rscript /out/meta-reg2.R /out/merge.csv /out/p_value.txt
+#R CMD BATCH --no-save --no-restore "--args $INPUTS1 $INPUTS2 $OUTPUTS1" $BASEDIR/meta-Reg.R
+
+cp $TEMP/p_value.txt $OUTPUTS1
+
+rm -fr $TEMP
+
+checkExitCode
+

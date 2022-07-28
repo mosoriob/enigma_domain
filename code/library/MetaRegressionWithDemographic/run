@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+checkExitCode() {
+if [ $? -ne 0 ]; then
+    echo "Error"
+    exit 1;
+fi
+}
+
+BASEDIR=`dirname $0`
+
+. $BASEDIR/io.sh 1 0 1 "$@"
+
+set -x
+$BASEDIR/generic_code $INPUTS1 $OUTPUTS1
+
+checkExitCode
